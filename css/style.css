@@ -1,0 +1,51 @@
+body {
+  color: #333;
+}
+
+.form-control {
+  border-radius: 0px;
+  border: 1px solid #333;
+}
+
+.form-control.form-control-lg {
+  height: calc(3.5rem + 2px);
+  padding: 1rem 0.75rem;
+  font-size: 1rem;
+}
+
+.form-control::placeholder {
+  font-size: 1rem;
+}
+
+.form-control.has-error {
+  border: 1px solid red;
+}
+
+.form-control.no-error {
+  border: 1px solid green;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.btn {
+  border-radius: 0;
+  border: 0;
+}
+
+.btn.btn-primary {
+  background-color: #38a4ef;
+}
+
+.btn.btn-primary:hover {
+  background-color: #2786c9;
+}
+
+.grecaptcha-badge {
+  display: none;
+}
