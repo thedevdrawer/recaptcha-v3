@@ -22,7 +22,7 @@ $error_output = '';
 
 if (isValid()) {
     $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify'; // URL to the reCAPTCHA server
-    $recaptcha_secret = '6LfVMJogAAAAAK87SIyD1v8K3GB4aLqg1iowQFHq'; // Secret key
+    $recaptcha_secret = 'yoursecretkeyhere'; // Secret key
     $recaptcha_response = $_POST['recaptchaResponse']; // Response from reCAPTCHA server, added to the form during processing
     $recaptcha = file_get_contents($recaptcha_url.'?secret='.$recaptcha_secret.'&response='.$recaptcha_response); // Send request to the server
     $recaptcha = json_decode($recaptcha); // Decode the JSON response

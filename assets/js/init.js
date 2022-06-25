@@ -25,7 +25,7 @@ window.addEventListener("load", function(){ // Wait for the page to load
             document.querySelector("#alert").innerText = "Processing your submission, please wait..."
             grecaptcha.ready(function() { // Wait for the recaptcha to be ready
                 grecaptcha
-                    .execute("6LfVMJogAAAAAMYaycv9J2WgpRh-f9lPDKBU6vVC", {
+                    .execute("yoursitekeyhere", {
                         action: "contact"
                     }) // Execute the recaptcha
                     .then(function(token){
